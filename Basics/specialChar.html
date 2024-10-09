@@ -8,6 +8,8 @@
     <script>
         $(document).ready(function(){
             $("#hideBtn").click(function(){
+                //  Escaping special characters ensures that they are treated as literal characters rather than 
+                // functional elements in selectors or code syntax, preventing errors and ambiguity in code interpretation.
                 $("#some\\#special\\:id").hide();
             })
         })
