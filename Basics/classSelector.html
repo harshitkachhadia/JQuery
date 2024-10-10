@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--jQuery library included -->
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	
+	<script>
+        $(document).ready(function(){
+            $(".toggleBtn").click(function(){
+                $(".para1").toggle();
+                if($(".para1").is(":visible")){
+                    $(".toggleBtn").text("Hide");
+                }else{
+                    $(".toggleBtn").text("Show");
+                }
+            })
+        })
+	</script>
+</head>
+
+<body>
+	<h2>Class selector</h2>
+
+	<p class="para1">
+		In this peragraph we are changing background.
+	</p>
+
+	<button class="toggleBtn">
+		Hide
+	</button>
+</body>
+
+</html>

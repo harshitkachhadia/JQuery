@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Character</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#colorBtn").click(function () {
+                $("#para1").css("background-color", "red");
+            });
+            $("#hideBtn").click(function () {
+                $("#para2").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h2>Id selector</h2>
+
+    <p id="para1">
+       Here Background Color is changed using  id selector
+
+    </p>
+    <p id="para2">
+        Here Background Color is changed using  id selector
+    </p>
+
+    <button id="colorBtn">
+        Change Background Color
+    </button>
+    <br><br>
+
+    <button id="hideBtn">
+        Hide Paragraph
+    </button>
+</body>
+
+</html>
