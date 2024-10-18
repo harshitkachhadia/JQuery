@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Child Selector</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // The :first-child selector allows you to select the first child of 
+        // its parent element
+        
+        $(document).ready(function(){
+            $("p:first-child").css("background-color", "yellow");
+        })
+    
+    </script>
+</head>
+<body>
+    <div>
+        <center>First Child Selector</center>
+    </div>
+    <div>
+        <p>here changes will reflect</p>
+        <p>here changes will not reflect</p>
+        <p>here changes will not reflect</p>
+    </div>
+</body>
+</html>
